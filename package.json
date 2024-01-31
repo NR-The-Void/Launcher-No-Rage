@@ -1,0 +1,44 @@
+{
+    "name": "Launcher-No-Rage",
+    "preductname": "Launcher No Rage",
+    "version": "0.0.1",
+    "description": "Launcher Mincraft pour le serveur No Rage",
+    "main": "src/app.js",
+    "author": {
+        "name": "The Void, Inc.",
+        "email": "",
+        "url": ""
+    },
+    "url": "http://minecraft.no-rage.com",
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
+        "build": "node build.js --obf=false --build=platform",
+        "icon": "node build.js --icon=http://minecraft.no-rage.com//icon/minecraft-icone.png"
+    },
+    "license": "CCANC",
+    "nodemonConfig": {
+        "ext": "js,html,css",
+        "ignore": "**/test"
+    },
+    "dependencies": {
+        "electron-updater": "^6.1.4",
+        "minecraft-java-core": "^3.8.1",
+        "node-bdd": "^2.0.3",
+        "node-fetch": "^2.7.0",
+        "xml-js": "^1.6.11"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^27.0.4",
+        "electron-builder": "^24.6.4",
+        "javascript-obfuscator": "^4.1.0",
+        "jimp": "^0.22.10",
+        "nodemon": "^3.0.1",
+        "png2icons": "^2.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NR-The-Void/Launcher-No-Rage.git"
+    }
+}

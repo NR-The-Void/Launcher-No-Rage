@@ -1,0 +1,11 @@
+# Generated
+node_modules
+app
+test
+dist
+node-v*
+data
+docs
+.idea
+.vscode
+.DS_Store
